@@ -1,0 +1,4 @@
+﻿  LiczbyPierwsze.cpp
+C:\Users\cyber\source\repos\LiczbyPierwsze\LiczbyPierwsze\LiczbyPierwsze.cpp(34,56): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+C:\Users\cyber\source\repos\LiczbyPierwsze\LiczbyPierwsze\LiczbyPierwsze.cpp(98,31): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+  LiczbyPierwsze.vcxproj -> C:\Users\cyber\source\repos\LiczbyPierwsze\Debug\LiczbyPierwsze.exe
