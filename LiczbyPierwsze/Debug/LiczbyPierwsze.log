@@ -1,4 +1,7 @@
 ﻿  LiczbyPierwsze.cpp
-C:\Users\cyber\source\repos\LiczbyPierwsze\LiczbyPierwsze\LiczbyPierwsze.cpp(34,56): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
-C:\Users\cyber\source\repos\LiczbyPierwsze\LiczbyPierwsze\LiczbyPierwsze.cpp(98,31): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+C:\Users\cyber\source\repos\LiczbyPierwsze\LiczbyPierwsze\LiczbyPierwsze.cpp(151,14): warning C4244: "inicjowanie": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\cyber\source\repos\LiczbyPierwsze\LiczbyPierwsze\LiczbyPierwsze.cpp(180,14): warning C4244: "inicjowanie": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\cyber\source\repos\LiczbyPierwsze\LiczbyPierwsze\LiczbyPierwsze.cpp(199,13): warning C4244: "inicjowanie": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\cyber\source\repos\LiczbyPierwsze\LiczbyPierwsze\LiczbyPierwsze.cpp(269,21): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+C:\Users\cyber\source\repos\LiczbyPierwsze\LiczbyPierwsze\LiczbyPierwsze.cpp(296,22): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
   LiczbyPierwsze.vcxproj -> C:\Users\cyber\source\repos\LiczbyPierwsze\Debug\LiczbyPierwsze.exe
