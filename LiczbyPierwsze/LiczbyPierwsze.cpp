@@ -7,8 +7,7 @@ using namespace std;
 
 #define M 2
 #define N 100000000
-#define LICZBA_PROCESOROW_FIZYCZNYCH 4
-#define LICZBA_PROCESOROW_LOGICZNYCH 8
+#define THREADS 8
 #define WYPISZ_PIERWSZE 1
 
 void wypisz(string tekst, bool* czyPierwsza, int m, int n) {
@@ -145,7 +144,7 @@ void eratosthenesOddSequential(int m, int n) {
 	real_stop = omp_get_wtime();
 	printf("Suma czasow przetwarzania wszystkich watkow wynosi %f sekund\n", ((double)(real_stop - real_start)));
 	if (WYPISZ_PIERWSZE == 1) {
-		wypisz("eratosthenesOnlyOddSequential", czyPierwsza, m, n);
+		wypisz("eratosthenesOddSequential", czyPierwsza, m, n);
 	}
 	delete[] czyPierwsza;
 }
@@ -228,18 +227,18 @@ void eratosthenesDomainParallel(int m, int n, int sliceSize, int threads) {
 	}
 	real_stop = omp_get_wtime();
 	printf("Suma czasow przetwarzania wszystkich watkow wynosi %f sekund\n", ((double)(real_stop - real_start)));
-	wypisz("eratosthenesBlokParallel", (bool*)primes, m, n);
+	wypisz("eratosthenesDomainParallel", primes, m, n);
 	delete[] primes;
 }
 
 int main()
 {
 	//naiveSequential(M, N);
-	naiveSequentialOdd(M, N);
-	//naiveParallel(M, N, LICZBA_PROCESOROW_LOGICZNYCH);
+	//naiveSequentialOdd(M, N);
+	//naiveParallel(M, N, THREADS);
 	//eratosthenesSequential(M, N);
 	//eratosthenesOddSequential(M, N);
-	//eratosthenesFunctionParallel(M, N, LICZBA_PROCESOROW_LOGICZNYCH);
-	//eratosthenesDomainParallel(M, N, 128 * 1024, LICZBA_PROCESOROW_LOGICZNYCH);
+	//eratosthenesFunctionParallel(M, N, THREADS);
+	eratosthenesDomainParallel(M, N, 128 * 1024, THREADS);
 	return 0;
 }
